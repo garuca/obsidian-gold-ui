@@ -27,8 +27,8 @@ const Footer = () => {
 
           <div className="space-y-4">
             <h4 className="font-heading text-sm tracking-luxury uppercase text-primary">Contato</h4>
-            <p className="text-muted-foreground text-sm">contato@lucasmorais.adv.br</p>
-            <p className="text-muted-foreground text-sm">(XX) XXXXX-XXXX</p>
+            <p className="text-muted-foreground text-sm">lucasdemorais.geo@gmai.lcom</p>
+            <p className="text-muted-foreground text-sm">(62) 98281-5055</p>
             <a
               href="#contato"
               className="inline-block bg-gold-gradient text-primary-foreground font-heading text-xs tracking-luxury uppercase px-6 py-3 rounded hover:shadow-gold transition-all duration-300 mt-2"
