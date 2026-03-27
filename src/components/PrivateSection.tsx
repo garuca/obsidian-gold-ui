@@ -11,18 +11,14 @@ const PrivateSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <div className="relative w-full h-[520px] overflow-hidden">
+          <div className="relative">
+            <div className="absolute -inset-1 bg-gold-gradient rounded opacity-15 blur-sm" />
             <img
               src={lucasOffice}
               alt="Lucas Morais no escritório"
-              className="absolute -inset-8 w-[calc(100%+64px)] h-[calc(100%+64px)] object-cover"
+              className="relative rounded w-full h-[480px] object-cover"
               loading="lazy"
             />
-            <div className="absolute inset-0 pointer-events-none" style={{
-              background: `
-                radial-gradient(ellipse 85% 80% at 45% 50%, transparent 30%, hsl(0 0% 3.5%) 70%)
-              `
-            }} />
           </div>
         </motion.div>
 
