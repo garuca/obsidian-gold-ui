@@ -11,19 +11,16 @@ const PrivateSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <div className="relative w-full h-[480px]">
+          <div className="relative w-full h-[520px] overflow-hidden">
             <img
               src={lucasOffice}
               alt="Lucas Morais no escritório"
-              className="w-full h-full object-cover"
+              className="absolute -inset-8 w-[calc(100%+64px)] h-[calc(100%+64px)] object-cover"
               loading="lazy"
             />
             <div className="absolute inset-0 pointer-events-none" style={{
               background: `
-                linear-gradient(to right, transparent 50%, hsl(0 0% 4%) 100%),
-                linear-gradient(to top, hsl(0 0% 4%) 0%, transparent 30%),
-                linear-gradient(to bottom, hsl(0 0% 4%) 0%, transparent 25%),
-                linear-gradient(to left, transparent 80%, hsl(0 0% 4%) 100%)
+                radial-gradient(ellipse 85% 80% at 45% 50%, transparent 30%, hsl(0 0% 3.5%) 70%)
               `
             }} />
           </div>

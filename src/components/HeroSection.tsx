@@ -39,17 +39,15 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="hidden lg:flex justify-end"
         >
-          <div className="relative w-[460px] h-[580px]">
+          <div className="relative w-[520px] h-[640px] overflow-hidden">
             <img
               src={lucasPortrait}
               alt="Lucas Morais - Advogado"
-              className="w-full h-full object-cover object-top"
+              className="absolute -inset-8 w-[calc(100%+64px)] h-[calc(100%+64px)] object-cover object-top"
             />
             <div className="absolute inset-0 pointer-events-none" style={{
               background: `
-                linear-gradient(to left, transparent 40%, hsl(0 0% 2%) 100%),
-                linear-gradient(to top, hsl(0 0% 2%) 0%, transparent 35%),
-                linear-gradient(to right, transparent 70%, hsl(0 0% 2%) 100%)
+                radial-gradient(ellipse 80% 90% at 55% 45%, transparent 35%, hsl(0 0% 2%) 75%)
               `
             }} />
           </div>
